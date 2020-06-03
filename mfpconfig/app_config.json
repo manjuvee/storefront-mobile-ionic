@@ -8,7 +8,8 @@
       },
       "displayName": "Storefront",
       "scopeElementMapping": {
-        "push.mobileclient": ""
+        "push.mobileclient": "",
+        "liveupdate.mobileclient": ""
       }
     }
   ],
@@ -20,10 +21,38 @@
           "apiKey": "AAAA_8Az9K4:APA91bHj8UMIyvftS9skN7-ui5BlA9zkIwn1YUewo2Sy6mNYwbCdrEg7eKcZTWDHhU9Ur8Gyh7EjbbZaBcWmrerMMT4Dk5qpU-JYKIpI-FaVv7pttRS_pCmz05iTaQMdWBINGwB3bZlEoMyjGctE6WMa83i0Wc_5RA",
           "senderId": "1098441290926"
         }
-      }
+      },
+      "tags": [
+        {
+          "name": "Tag1",
+          "description": "Abt Tag1"
+        },
+        {
+          "name": "Tag2",
+          "description": "Abt Tag2"
+        }
+      ]
     },
     {
-      "name": "liveupdate"
+      "name": "liveupdate",
+      "schema": {
+        "features": {
+          "enableButton": {
+            "name": "enableButton",
+            "internalId": "enableButton",
+            "description": "Show the feature button",
+            "defaultValue": false
+          }
+        },
+        "properties": {
+          "titleColour": {
+            "name": "titleColour",
+            "internalId": "titleColour",
+            "description": "Change colour of the title",
+            "defaultValue": "black"
+          }
+        }
+      }
     },
     {
       "name": "analytics"
